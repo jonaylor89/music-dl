@@ -1,0 +1,13 @@
+[project]
+name = "music-dl"
+version = "0.1.0"
+description = "Download music from Suno or other music platforms"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "pywidevine>=1.8",
+    "tqdm>=4.66",
+]
+
+[project.scripts]
+music-dl = "music_dl:main"
