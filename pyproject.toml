@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "music-dl"
 version = "0.1.0"
@@ -11,3 +15,7 @@ dependencies = [
 
 [project.scripts]
 music-dl = "music_dl:main"
+music-dl-setup-cdm = "setup_cdm:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["music_dl.py", "setup_cdm.py"]
